@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ML Lab Vault - Official Machine Learning Lab Experiments (B.Tech CSE) with Step-by-Step Algorithm, Clean Python Program, and Execution Output.">
+  <title>ML Lab Experiments Vault | Algorithms, Code & Output</title>
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- PrismJS Syntax Highlighter Dark Theme -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Top Header -->
+  <header class="top-header">
+    <div class="container header-inner">
+      <div class="project-brand">
+        <span class="brand-icon">⚡</span>
+        <div>
+          <h1 class="project-title">ML Lab Experiments Vault</h1>
+          <p class="project-subtitle">B.Tech CSE Machine Learning Laboratory &bull; 8 Core Experiments</p>
+        </div>
+      </div>
+
+      <!-- Quick Search / Filter Bar -->
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="Filter experiments, algorithms, datasets (1-8)..."
+          oninput="handleSearch(this.value)"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- Jump Bar (Quick navigation to any experiment) -->
+  <nav class="nav-pills-bar">
+    <div class="container nav-pills-container" id="nav-pills-container">
+      <!-- Populated dynamically: Exp 1, Exp 2, ..., Exp 8 -->
+    </div>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    <section class="experiments-list" id="experiments-list">
+      <!-- 8 Experiment Cards rendered dynamically -->
+    </section>
+  </main>
+
+  <!-- Floating Toast Notifications -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- PrismJS Library for Syntax Highlighting -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+  <!-- App Data & Logic Scripts -->
+  <script src="js/algorithms.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
